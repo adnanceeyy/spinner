@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Spinner</title>
+
+</head>
+<body>
+     <!-- page 1 -->
+  <div id="condainer">
+    <div class="inputarea">
+      <input type="text" id="userInput" placeholder="Add Names">
+      <button onclick="addItem()" class="addbtn">Add</button>
+    </div> 
+    <button class="resetBtn" onclick="resetbtn()">Reset</button>
+
+    <div class="names">
+      <ul id="list"></ul>
+    </div>
+
+    <button class="spinbtn" onclick="firstpage()">
+      <span class="circle1"></span>
+      <span class="circle2"></span>
+      <span class="circle3"></span>
+      <span class="circle4"></span>
+      <span class="circle5"></span>
+      <span class="text">Spin it.</span>
+    </button>
+  </div>
+  <!-- page 1 closed -->
+
+  <!-- page 2 -->
+  <div id="spinningpage">
+    <i id="arrow" class="bi bi-caret-down-fill"></i>
+    <div class="result" id="result"></div>
+    <button class="back-btn" onclick="goBack()">Edit Names</button>
+    <div class="wheel-container">
+      <div class="pointer"></div>
+      <canvas class="wheel" id="wheel" width="500" height="500"></canvas>
+    </div>
+    <button class="spin-button" onclick="spinWheel()" id="spinBtn">Spin!</button>
+  </div>
+  <!-- page 2 closed -->
+
+<script src="script.js"></script>
+</body>
+</html>
