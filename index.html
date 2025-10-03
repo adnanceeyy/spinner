@@ -11,12 +11,15 @@
 <body>
      <!-- page 1 -->
   <div id="condainer">
+    <div class="inpitoutside">
     <div class="inputarea">
       <input type="text" id="userInput" placeholder="Add Names">
       <button onclick="addItem()" class="addbtn">Add</button>
     </div> 
-    <button class="resetBtn" onclick="resetbtn()">Reset</button>
+          <button class="resetBtn" onclick="resetbtn()">Reset</button>
 
+    </div>
+  
     <div class="names">
       <ul id="list"></ul>
     </div>
@@ -34,7 +37,6 @@
 
   <!-- page 2 -->
   <div id="spinningpage">
-    <i id="arrow" class="bi bi-caret-down-fill"></i>
     <div class="result" id="result"></div>
     <button class="back-btn" onclick="goBack()">Edit Names</button>
     <div class="wheel-container">

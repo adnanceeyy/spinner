@@ -1,307 +1,361 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-#condainer{
+
+#condainer {
     width: 100vw;
     height: 100vh;
     background-color: aliceblue;
-    background-image: linear-gradient(rgba(152, 114, 240, 0.938),rgba(18, 4, 211, 0.795));
+    background-image: linear-gradient(rgba(152, 114, 240, 0.938), rgba(18, 4, 211, 0.795));
     text-align: center;
-    padding-top:160px;
+    padding-top: 10%;
 }
-.inputarea{
-    width: 1000px;
+.inpitoutside{
+    display: flex;
+    justify-content: center;
+}
+.inputarea {
+    width: 55%;
     height: 60px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
-    align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: row;
+    padding-right: 1.5px;
     box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.562);
-    border: .5px solid rgba(51, 51, 51, 0.514);
+    border: 0.5px solid rgba(51, 51, 51, 0.514);
     border-radius: 35px;
-    margin-left: 360px;
-    gap: 100px;
+    gap: 5%;
 }
-.inputarea input{
-    font-size: 25px;
-    height: 59px;
+
+.inputarea input {
+    font-size: 1.5rem;
+    height: 100%;
     padding-left: 20px;
-    background-color: #ffffff00;
-    width: 750px;
+    background-color: transparent;
+    width: 70%;
     border: none;
     border-radius: 35px;
     outline: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: lighter;
     color: rgba(0, 0, 0, 0.705);
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
-.inputarea .addbtn{
-    font-size: 25px;
-    width: 145px;
-    height:56px;
+
+.inputarea .addbtn {
+    font-size: 1.5rem;
+    width: 20%;
+    max-width: 145px;
+    height: 56px;
     border-radius: 35px;
     border: none;
     background-color: #3c43ac;
     color: #ffffff;
     cursor: pointer;
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
-.inputarea .addbtn:hover{
-  width: 200px;
-  margin-right: 1px;
-  box-shadow: -10px 0px 0px rgba(157, 122, 252, 0.445);
-  background-color: #5647db;
+
+.inputarea .addbtn:hover {
+    width: 25%;
+    max-width: 200px;
+    box-shadow: -10px 0px 0px rgba(157, 122, 252, 0.445);
+    background-color: #5647db;
 }
-.resetBtn{
-    font-size: 25px;
+
+.resetBtn {
+    font-size: 1.5rem;
     width: 140px;
-    height:57px;
+    height: 57px;
     border-radius: 35px;
     border: 2px solid rgba(255, 255, 255, 0.89);
-    position: fixed;
-    right: 416px;
-    top: 163px;
     background-color: #482ebd;
     color: #ffffff;
     box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.562);
-    transition: .5s ease;
+    transition: 0.5s ease;
 }
-.resetBtn:hover{
+
+.resetBtn:hover {
     border: 2px solid #482ebd;
     background-color: #ffffff;
     color: #482ebd;
-
 }
-.names{
+
+.names {
     display: flex;
     justify-content: center;
-    width: 1700px;
+    width: 90%;
+    max-width: 1700px;
     height: auto;
-    background: #00000000;
+    background: transparent;
     border-radius: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-top: 80px;
-    margin-left: 100px;
+    margin: 5% auto;
     padding: 10px;
 }
-.names li{
+
+.names li {
     background-color: #ffffff;
     color: rgba(29, 29, 29, 0.911);
     height: 49px;
-    font-size: 35px;
+    font-size: 2rem;
     border-radius: 40px;
     list-style-type: none;
-    padding: 0px 15px;
+    padding: 0 15px;
     padding-top: 2px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     display: flex;
     align-items: center;
     gap: 5px;
 }
+
 .names li:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.names ul{
+
+.names ul {
     display: flex;
     gap: 12px;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.names i{
+
+.names i {
     cursor: pointer;
-    transition: .3s ease;
-    font-size: 30px;
+    transition: 0.3s ease;
+    font-size: 1.8rem;
 }
-.names i:hover{
+
+.names i:hover {
     background: #8181813f;
     border-radius: 50%;
-    display: block;
 }
 
-/* btn */
 .spinbtn {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: rgba(238, 222, 248, 0.959);
-  background-color: #0f36b8;
-  background: linear-gradient(rgb(169, 123, 255),rgb(95, 51, 175),rgb(116, 63, 240));
-  padding: 20px 45px;
-  font-size: 50px;
-  margin-top: 100px;
-  border: 4px solid rgba(255, 255, 255, 0.747);
-  border-radius: 5rem;
-  position: absolute;
-  cursor: pointer;
-  overflow: hidden;
-  box-shadow: 0px 0px 40px 0px rgb(31, 31, 31);
-  bottom: 40px;
-  right: 40px;
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(238, 222, 248, 0.959);
+    background: linear-gradient(rgb(169, 123, 255), rgb(95, 51, 175), rgb(116, 63, 240));
+    padding: 20px 45px;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    border: 4px solid rgba(255, 255, 255, 0.747);
+    border-radius: 5rem;
+    position: fixed;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px 0px rgb(31, 31, 31);
+    bottom: 40px;
+    right: 40px;
 }
 
 .spinbtn span:not(:nth-child(6)) {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 60px;
-  width: 60px;
-  background-color: #000000;
-  border-radius: 50%;
-  transition: 1.5s ease;
-}
-
-.spinbtn span:nth-child(6) {
-  position: relative;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: 1.5s ease;
 }
 
 .spinbtn span:nth-child(1) {
-  transform: translate(-3.3em, -4em);
+    transform: translate(-3.3em, -4em);
 }
 
 .spinbtn span:nth-child(2) {
-  transform: translate(-6em, 1.3em);
+    transform: translate(-6em, 1.3em);
 }
 
 .spinbtn span:nth-child(3) {
-  transform: translate(-.2em, 1.8em);
+    transform: translate(-0.2em, 1.8em);
 }
 
 .spinbtn span:nth-child(4) {
-  transform: translate(3.5em, 1.4em);
+    transform: translate(3.5em, 1.4em);
 }
 
 .spinbtn span:nth-child(5) {
-  transform: translate(3.5em, -3.8em);
+    transform: translate(3.5em, -3.8em);
 }
 
 .spinbtn:hover span:not(:nth-child(6)) {
-  transform: translate(-50%, -50%) scale(4);
-  transition: 1.5s ease;
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
 }
-/* ////////////////////////222222222222222222222222222222222222222///////////////////////// */
-#spinningpage{
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background: #ffffff;
-  background-image: linear-gradient(rgba(152, 114, 240, 0.938),rgba(18, 4, 211, 0.795));
-  position: relative;
+
+#spinningpage {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    background-image: linear-gradient(rgba(152, 114, 240, 0.938), rgba(18, 4, 211, 0.795));
+    position: relative;
 }
 
 .wheel-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
-  box-shadow: 0 0 50px rgba(0,0,0,0.3);
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    max-width: 500px;
+    height: 70vw;
+    max-height: 500px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .wheel {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 15px solid #fff;
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.1);
-  transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 15px solid #fff;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .spin-button {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 15px 30px;
-  font-size: 24px;
-  background: linear-gradient(45deg, rgb(169, 123, 255), rgb(95, 51, 175), rgb(116, 63, 240));
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transition: all 0.2s ease;
-  font-weight: bold;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, rgb(169, 123, 255), rgb(95, 51, 175), rgb(116, 63, 240));
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    font-weight: bold;
 }
 
 .spin-button:hover {
-  transform: translateX(-50%) scale(1.05);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .spin-button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: translateX(-50%);
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: translateX(-50%);
 }
 
 .result {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 100px;
-  font-weight: bold;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  display: none;
-  background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
-  padding: 20px 30px;
-  border-radius: 10px;
-  backdrop-filter: blur(10px);
-  z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: none;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    z-index: 1;
 }
 
 .pointer {
-  position: absolute;
-  top: -65px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  border-top: 50px solid #fff;
-  z-index: 10;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 50px solid #ffffff;
+    z-index: 10;
 }
 
 .back-btn {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  padding: 10px 20px;
-  font-size: 18px;
-  background: rgba(255,255,255,0.2);
-  color: white;
-  border: 2px solid rgba(255,255,255,0.5);
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .back-btn:hover {
-  background: rgba(255,255,255,0.3);
-  transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
 }
-#arrow{
-    position: fixed;
-    color: rgb(255, 255, 255);
-    font-size: 120px;
-    top: 22%;
-    left: 47%;
-    z-index: 10;
+
+
+/* Media Queries for Responsiveness */
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 1280px) {
+    .resetBtn{
+        width: 120px;
+    }
+    .names li {
+    height: 45px;
+    font-size: 1.5rem;
+    padding: 0 10px;
+    padding-top: 2px;
+    gap: 5px;
+}
+
+}
+@media screen and (max-width: 780px) {
+    .resetBtn{
+        width: 90px;
+        font-size: 1.3rem;
+    }
+    .names li {
+    height: 38px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+    padding-top: 0px;
+    gap: 3px;
+}
+.names i{
+    font-size: 30px;
+}
+.names{
+    width: 85%;
+}
+.inputarea{
+    gap: 0px;
+}
+.addbtn{
+ padding: 10px 70px 10px 30px;    
+}
+.result{
+    font-size: 2rem;
+    top: 11%
+}
+
+.spinbtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(238, 222, 248, 0.959);
+    background: linear-gradient(rgb(169, 123, 255), rgb(95, 51, 175), rgb(116, 63, 240));
+    padding: 15px 35px;
+    font-size: 1.8rem;
+    right: 20px;
+    bottom: 20px;
+}
 }
