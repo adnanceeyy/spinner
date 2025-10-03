@@ -254,6 +254,7 @@
 }
 
 .result {
+    text-align: center;
     position: absolute;
     top: 5%;
     left: 50%;
@@ -269,7 +270,6 @@
     backdrop-filter: blur(10px);
     z-index: 1;
 }
-
 .pointer {
     position: absolute;
     top: 0%;
@@ -358,4 +358,8 @@
     right: 20px;
     bottom: 20px;
 }
+.spin-button {
+    bottom: 10%;
+}
+
 }

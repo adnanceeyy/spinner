@@ -177,7 +177,7 @@ function spinWheel() {
     const result = document.getElementById('result');
     result.textContent = `Winner: ${names[selectedIndex]}! 🎉`;
     result.style.display = 'block';
-
+    
     setTimeout(() => {
       canvas.style.transition = 'none';
       canvas.style.transform = 'rotate(0deg)';
